@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApptiVerse Labs - Thoughtful Android Apps</title>
+    
+    <link rel="icon" type="image/png" href="ApptiVerse.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #0F172A 0%, #1E1B4B 100%);
+            color: #F8FAFC;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-emerald-500 selection:text-slate-900">
+
+    <!-- Header -->
+    <header class="w-full py-4 px-6 md:px-8 flex justify-between items-center max-w-6xl mx-auto bg-slate-900/40 backdrop-blur-md rounded-2xl mt-4 border border-white/10 shadow-lg">
+        <div class="flex items-center space-x-3">
+            <img src="ApptiVerse.png" alt="ApptiVerse Labs Logo" class="h-9 w-9 md:h-10 md:w-10 object-contain rounded-xl shadow">
+            <div>
+                <span class="text-base md:text-lg font-bold tracking-wider text-white">ApptiVerse Labs</span>
+                <p class="text-[10px] text-emerald-400/80 font-medium -mt-1 hidden sm:block">Where Ideas Become Apps</p>
+            </div>
+        </div>
+        <div class="flex items-center space-x-4">
+            <a href="#apps" class="text-xs md:text-sm font-medium text-slate-300 hover:text-white transition">Our Apps</a>
+            <a href="mailto:support.apptiverse@gmail.com" class="text-xs md:text-sm font-semibold bg-emerald-500/10 text-emerald-400 hover:bg-emerald-500/20 transition px-4 py-2 rounded-full border border-emerald-500/30">Contact Support</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="max-w-6xl mx-auto px-6 py-16 text-center">
+        <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-slate-800/80 border border-white/10 text-xs font-medium text-emerald-400 mb-6 shadow-sm">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span>Where Ideas Become Apps</span>
+        </div>
+        
+        <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 text-white leading-tight">
+            Crafting Thoughtful Apps for <br class="hidden md:block">
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400">Focus, Mindfulness & Daily Life</span>
+        </h1>
+        <p class="text-base md:text-xl text-slate-300 max-w-2xl mx-auto mb-12">
+            At ApptiVerse Labs, we build simple, privacy-first mobile tools designed to break digital distractions, cultivate calm, and empower personal growth.
+        </p>
+
+        <!-- Apps Showcase Section -->
+        <section id="apps" class="pt-8">
+            <h2 class="text-2xl font-bold text-white mb-2 text-left">Our Applications</h2>
+            <p class="text-slate-400 text-sm mb-8 text-left">Available worldwide on the Google Play Store.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+                
+                <!-- App Card 1: PauseGate -->
+                <div class="bg-slate-900/60 border border-emerald-500/20 rounded-3xl p-6 md:p-8 flex flex-col justify-between hover:border-emerald-500/40 transition shadow-xl relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-emerald-500/10 rounded-full blur-3xl group-hover:bg-emerald-500/20 transition"></div>
+                    
+                    <div>
+                        <div class="flex items-center space-x-4 mb-5">
+                            <img src="pausegate_logo.jpg" alt="PauseGate Zen Ring Logo" class="w-14 h-14 rounded-2xl object-cover shadow-lg border border-emerald-500/30">
+                            <div>
+                                <h3 class="text-xl font-bold text-white group-hover:text-emerald-300 transition">PauseGate: Screen Time Focus</h3>
+                                <div class="flex space-x-2 mt-1">
+                                    <span class="text-[10px] font-semibold px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">Digital Wellbeing</span>
+                                    <span class="text-[10px] font-semibold px-2 py-0.5 rounded bg-slate-800 text-slate-300">Productivity</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                            Break compulsive phone reflexes before doomscrolling begins. Introduces an intentional 5–30s breathing pause before social apps launch, paired with 4-7-8 deep relaxation routines and daily screen time logs.
+                        </p>
+                    </div>
+
+                    <div class="pt-4 border-t border-white/5 flex flex-wrap items-center justify-between gap-3">
+                        <a href="pausegate/privacy.html" class="text-xs text-slate-400 hover:text-white transition underline underline-offset-4">Privacy Policy</a>
+                        <a href="#" class="inline-flex items-center space-x-2 text-xs font-bold bg-emerald-500 hover:bg-emerald-400 text-slate-950 px-4 py-2 rounded-xl transition shadow">
+                            <span>Get on Google Play</span>
+                            <span>&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- App Card 2: Digital Japa Mala -->
+                <div class="bg-slate-900/60 border border-amber-500/20 rounded-3xl p-6 md:p-8 flex flex-col justify-between hover:border-amber-500/40 transition shadow-xl relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-amber-500/10 rounded-full blur-3xl group-hover:bg-amber-500/20 transition"></div>
+                    
+                    <div>
+                        <div class="flex items-center space-x-4 mb-5">
+                            <img src="japa_mala_logo.png" alt="Digital Japa Mala Logo" class="w-14 h-14 rounded-2xl object-cover shadow-lg border border-amber-500/30">
+                            <div>
+                                <h3 class="text-xl font-bold text-white group-hover:text-amber-300 transition">Digital Japa Mala - Counter</h3>
+                                <div class="flex space-x-2 mt-1">
+                                    <span class="text-[10px] font-semibold px-2 py-0.5 rounded bg-amber-500/10 text-amber-400 border border-amber-500/20">Spirituality</span>
+                                    <span class="text-[10px] font-semibold px-2 py-0.5 rounded bg-slate-800 text-slate-300">Mindfulness</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                            A peaceful, distraction-free digital chanting bead counter for your daily prayers and mantras. Features authentic tactile haptic feedback, streak tracking, and customizable mala targets (108, 1008 beads).
+                        </p>
+                    </div>
+
+                    <div class="pt-4 border-t border-white/5 flex flex-wrap items-center justify-between gap-3">
+                        <a href="japa-mala/privacy.html" class="text-xs text-slate-400 hover:text-white transition underline underline-offset-4">Privacy Policy</a>
+                        <a href="https://play.google.com/store/apps/details?id=com.apptiverselabs.digitaljapamala" target="_blank" class="inline-flex items-center space-x-2 text-xs font-bold bg-amber-400 hover:bg-amber-300 text-slate-950 px-4 py-2 rounded-xl transition shadow">
+                            <span>Get on Google Play</span>
+                            <span>&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full border-t border-white/10 py-8 px-6 text-center bg-slate-950/60 mt-12">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+            <div>
+                &copy; 2026 <strong class="text-slate-300">ApptiVerse Labs</strong>. All rights reserved.
+            </div>
+            <div class="flex space-x-6">
+                <a href="pausegate/privacy.html" class="hover:text-white transition">PauseGate Policy</a>
+                <a href="japa-mala/privacy.html" class="hover:text-white transition">Japa Mala Policy</a>
+                <a href="mailto:support.apptiverse@gmail.com" class="hover:text-white transition">Support: support.apptiverse@gmail.com</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
