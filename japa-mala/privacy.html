@@ -1,89 +1,666 @@
-<div style="font-family: Arial, Helvetica, sans-serif; line-height: 1.6; color: #333333; padding: 10px;">
-  <h1 style="color: #0F172A; font-size: 26px; margin-bottom: 5px;">Privacy Policy for Digital Japa Mala</h1>
-  <p style="color: #64748B; font-size: 14px; margin-top: 0;"><strong>Last Updated:</strong> November 2026</p>
-  <p><strong>ApptiVerse Labs</strong> ("we," "our," or "us") built the <strong>Digital Japa Mala</strong> app as an ad-supported Freemium application. This SERVICE is provided by ApptiVerse Labs at no cost and is intended for use as is.</p>
-  <p>This Privacy Policy explains how we handle your information and your privacy rights when you use our mobile application.</p>
-  
-  <hr style="border: 0; border-top: 1px solid #E2E8F0; margin: 20px 0;">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Digital Japa Mala</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #0F172A;
+      --primary-light: #1E293B;
+      --gold: #D97706;
+      --gold-light: #FEF3C7;
+      --gold-dark: #B45309;
+      --accent-blue: #2563EB;
+      --accent-blue-light: #EFF6FF;
+      --accent-green: #059669;
+      --accent-green-light: #ECFDF5;
+      --bg: #F8FAFC;
+      --card-bg: #FFFFFF;
+      --text-main: #1E293B;
+      --text-muted: #64748B;
+      --border: #E2E8F0;
+      --radius-lg: 20px;
+      --radius-md: 14px;
+      --radius-sm: 8px;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.05);
+      --shadow-md: 0 4px 20px -2px rgba(15, 23, 42, 0.06);
+      --shadow-lg: 0 10px 30px -4px rgba(15, 23, 42, 0.08);
+    }
 
-  <h2 style="color: #0F172A; font-size: 19px;">1. Information Collection and Local Data Privacy</h2>
-  <p>We believe your spiritual chanting practice should remain private, peaceful, and sacred.</p>
-  <ul>
-    <li><strong>No User Accounts or Registration:</strong> You do not need to create an account, log in, or provide any personal details (such as your name, email address, phone number, or contacts) to use the app.</li>
-    <li><strong>100% Local Storage:</strong> All your daily counts, completed rounds, custom mantras, counter profiles, wallpaper preferences, achievement badges, and history logs are stored strictly on your device's internal storage (SharedPreferences and local app database). We do not collect, store, or transmit your chanting data or spiritual logs to any external server.</li>
-  </ul>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-  <hr style="border: 0; border-top: 1px solid #E2E8F0; margin: 20px 0;">
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: var(--bg);
+      color: var(--text-main);
+      line-height: 1.65;
+      padding: 24px 16px;
+      -webkit-font-smoothing: antialiased;
+    }
 
-  <h2 style="color: #0F172A; font-size: 19px;">2. Third-Party Services and Automatically Collected Data</h2>
-  <p>To provide advertisements and process optional in-app purchases, the app integrates trusted third-party SDKs provided by Google. In compliance with Google Play's Data Safety standards, these services collect and process certain technical data:</p>
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
 
-  <h3 style="color: #334155; font-size: 16px;">A. Google AdMob (Google Mobile Ads SDK)</h3>
-  <p>We use Google AdMob to display banner, interstitial, and exit rewarded video ads. To deliver relevant ads and detect fraud, Google AdMob automatically collects:</p>
-  <ul>
-    <li><strong>Approximate Location:</strong> General location derived from your device's IP address (not precise GPS location).</li>
-    <li><strong>Device or Other Identifiers:</strong> Your Android Advertising ID (AAID) and app set identifiers used for ad frequency capping, fraud prevention, and contextual/personalized advertising.</li>
-    <li><strong>App Activity & Interactions:</strong> Ad impressions, views, clicks, and interaction telemetry.</li>
-    <li><strong>Diagnostics & Performance:</strong> Crash logs, app launch times, and performance metrics to ensure SDK stability.</li>
-  </ul>
-  <p>For more details on how Google handles advertising data, please review:</p>
-  <ul>
-    <li><a href="https://policies.google.com/privacy" target="_blank" style="color: #2563EB;">Google Privacy Policy</a></li>
-    <li><a href="https://policies.google.com/technologies/partner-sites" target="_blank" style="color: #2563EB;">How Google uses information from sites or apps that use our services</a></li>
-  </ul>
+    /* HERO HEADER CARD */
+    .hero-card {
+      background: linear-gradient(135deg, #0F172A 0%, #1E1B4B 60%, #1E293B 100%);
+      color: #FFFFFF;
+      border-radius: var(--radius-lg);
+      padding: 44px 36px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow-lg);
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
 
-  <h3 style="color: #334155; font-size: 16px;">B. Google Play In-App Billing</h3>
-  <p>If you purchase the optional "Remove Ads" feature, transaction processing is handled securely and entirely by Google Play Store Billing. We never receive or store your credit card, bank, or payment details.</p>
+    .hero-card::after {
+      content: "";
+      position: absolute;
+      top: -60px;
+      right: -60px;
+      width: 240px;
+      height: 240px;
+      background: radial-gradient(circle, rgba(245, 158, 11, 0.18) 0%, rgba(245, 158, 11, 0) 70%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
 
-  <hr style="border: 0; border-top: 1px solid #E2E8F0; margin: 20px 0;">
+    .hero-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
 
-  <h2 style="color: #0F172A; font-size: 19px;">3. Device Permissions</h2>
-  <p>The app requests only standard Android permissions strictly necessary to deliver its core features:</p>
-  <ul>
-    <li><strong>Internet & Network Access (INTERNET, ACCESS_NETWORK_STATE):</strong> Required for loading Google AdMob advertisements and verifying Google Play Billing status.</li>
-    <li><strong>Notifications (POST_NOTIFICATIONS):</strong> Used solely to deliver scheduled daily chanting reminders that you can turn on or off at any time in Settings.</li>
-    <li><strong>Vibration (VIBRATE):</strong> Used to provide haptic feedback when tapping the chant counter.</li>
-    <li><strong>Photos / Media Storage (Photo Picker):</strong> Used only if you choose to set a custom deity photo as your background wallpaper from your phone's gallery. Your photos remain on your device and are never uploaded anywhere.</li>
-  </ul>
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 6px 14px;
+      border-radius: 30px;
+    }
 
-  <hr style="border: 0; border-top: 1px solid #E2E8F0; margin: 20px 0;">
+    .badge-gold {
+      background: rgba(245, 158, 11, 0.15);
+      color: #FBBF24;
+      border: 1px solid rgba(245, 158, 11, 0.35);
+    }
 
-  <h2 style="color: #0F172A; font-size: 19px;">4. Data Storage, Backup, and PDF Export</h2>
-  <ul>
-    <li><strong>Local Backups:</strong> If you use the "Backup Data" feature, your backup text file is saved locally to your device or shared via your device's native share menu (e.g., to your personal Google Drive). We have no access to your Google Drive account or files.</li>
-    <li><strong>PDF Activity Reports:</strong> Exported PDF history reports are generated entirely on your device and saved directly to your device's Downloads folder.</li>
-  </ul>
+    .badge-muted {
+      background: rgba(255, 255, 255, 0.1);
+      color: #E2E8F0;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
 
-  <hr style="border: 0; border-top: 1px solid #E2E8F0; margin: 20px 0;">
+    .hero-title {
+      font-size: 32px;
+      font-weight: 800;
+      line-height: 1.25;
+      margin-bottom: 12px;
+      background: linear-gradient(to right, #FFFFFF, #E2E8F0);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
 
-  <h2 style="color: #0F172A; font-size: 19px;">5. Security & Encryption in Transit</h2>
-  <ul>
-    <li>All technical data transmitted by third-party SDKs (AdMob and Google Play Billing) is encrypted in transit using industry-standard <strong>HTTPS/TLS protocols</strong>.</li>
-    <li>Because all chanting data is kept locally on your phone, your personal counts are not exposed to internet vulnerabilities.</li>
-  </ul>
+    .hero-desc {
+      color: #CBD5E1;
+      font-size: 15px;
+      max-width: 680px;
+    }
 
-  <hr style="border: 0; border-top: 1px solid #E2E8F0; margin: 20px 0;">
+    /* QUICK PILLARS GRID */
+    .pillars-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 14px;
+      margin-bottom: 24px;
+    }
 
-  <h2 style="color: #0F172A; font-size: 19px;">6. Data Retention, Deletion & Opt-Out</h2>
-  <ul>
-    <li><strong>Deleting Your Practice Data:</strong> You can delete your counter profiles and history at any time using the in-app Reset/Delete buttons, or by clearing the app's data in Android Settings (Settings > Apps > Digital Japa Mala > Clear Data), or by uninstalling the application.</li>
-    <li><strong>Managing Advertising ID:</strong> You can control, reset, or delete your Android Advertising ID at any time by navigating to your device's <em>Settings > Google > Ads > Reset advertising ID</em> or <em>Delete advertising ID</em>.</li>
-  </ul>
+    .pillar-box {
+      background: var(--card-bg);
+      border-radius: var(--radius-md);
+      padding: 18px 20px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
 
-  <hr style="border: 0; border-top: 1px solid #E2E8F0; margin: 20px 0;">
+    .pillar-box:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
 
-  <h2 style="color: #0F172A; font-size: 19px;">7. Children’s Privacy</h2>
-  <p>Our Service is not directed to children under the age of 13. We do not knowingly collect personally identifiable information from children under 13. If you are a parent or guardian and believe that your child has provided personal information, please contact us so we can take appropriate action.</p>
+    .pillar-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      flex-shrink: 0;
+    }
 
-  <hr style="border: 0; border-top: 1px solid #E2E8F0; margin: 20px 0;">
+    .pillar-icon.green { background: var(--accent-green-light); color: var(--accent-green); }
+    .pillar-icon.blue { background: var(--accent-blue-light); color: var(--accent-blue); }
+    .pillar-icon.gold { background: var(--gold-light); color: var(--gold-dark); }
+    .pillar-icon.purple { background: #F3E8FF; color: #7E22CE; }
 
-  <h2 style="color: #0F172A; font-size: 19px;">8. Changes to This Privacy Policy</h2>
-  <p>We may update our Privacy Policy from time to time to reflect app enhancements or policy updates. We encourage you to review this page periodically. Any modifications are effective immediately upon being posted on this page.</p>
+    .pillar-text h4 {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 2px;
+    }
 
-  <hr style="border: 0; border-top: 1px solid #E2E8F0; margin: 20px 0;">
+    .pillar-text p {
+      font-size: 12px;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
 
-  <h2 style="color: #0F172A; font-size: 19px;">9. Contact Us</h2>
-  <p>If you have any questions, feedback, or concerns regarding this Privacy Policy or your data, please contact us at:</p>
-  <p><strong>Developer:</strong> ApptiVerse Labs<br>
-  <strong>Email:</strong> <a href="mailto:support.apptiverse@gmail.com" style="color: #2563EB;">support.apptiverse@gmail.com</a></p>
-</div>
+    /* CONTENT CARDS */
+    .card {
+      background: var(--card-bg);
+      border-radius: var(--radius-lg);
+      padding: 32px 30px;
+      margin-bottom: 20px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .card-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 18px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid #F1F5F9;
+    }
+
+    .card-number {
+      width: 32px;
+      height: 32px;
+      background: var(--primary);
+      color: #FFFFFF;
+      font-size: 14px;
+      font-weight: 800;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .card-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .card-body {
+      font-size: 14.5px;
+      color: var(--text-main);
+    }
+
+    .card-body p {
+      margin-bottom: 14px;
+    }
+
+    .card-body p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* NESTED SUB-CARDS */
+    .sub-card {
+      background: #F8FAFC;
+      border: 1px solid #E2E8F0;
+      border-radius: var(--radius-md);
+      padding: 20px;
+      margin-top: 16px;
+    }
+
+    .sub-card-title {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+
+    .tag-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 12px 0;
+    }
+
+    .chip {
+      background: #FFFFFF;
+      border: 1px solid var(--border);
+      color: var(--primary);
+      font-size: 12px;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 20px;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .chip-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--gold);
+    }
+
+    /* PERMISSION TILES GRID */
+    .permissions-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 12px;
+      margin-top: 14px;
+    }
+
+    .perm-tile {
+      background: #F8FAFC;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 16px;
+    }
+
+    .perm-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 8px;
+    }
+
+    .perm-name {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .perm-code {
+      font-family: monospace;
+      font-size: 10.5px;
+      background: #E2E8F0;
+      color: #334155;
+      padding: 2px 7px;
+      border-radius: 4px;
+    }
+
+    .perm-desc {
+      font-size: 12.5px;
+      color: var(--text-muted);
+      line-height: 1.45;
+    }
+
+    /* LIST STYLING */
+    ul.bullet-list {
+      list-style: none;
+      padding-left: 0;
+      margin: 12px 0;
+    }
+
+    ul.bullet-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 10px;
+      font-size: 14px;
+      color: var(--text-main);
+    }
+
+    ul.bullet-list li::before {
+      content: "•";
+      position: absolute;
+      left: 8px;
+      top: -1px;
+      color: var(--gold);
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    /* HIGHLIGHT BOXES */
+    .highlight-box {
+      background: #FEF9C3;
+      border-left: 4px solid var(--gold);
+      padding: 14px 18px;
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      font-size: 13.5px;
+      color: #713F12;
+      margin: 14px 0;
+    }
+
+    /* LINKS */
+    a.custom-link {
+      color: var(--accent-blue);
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.15s ease;
+    }
+
+    a.custom-link:hover {
+      text-decoration: underline;
+      color: #1D4ED8;
+    }
+
+    /* CONTACT FOOTER CARD */
+    .contact-card {
+      background: linear-gradient(135deg, #F8FAFC 0%, #EFF6FF 100%);
+      border: 1px solid #BFDBFE;
+      border-radius: var(--radius-lg);
+      padding: 32px 30px;
+      text-align: center;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .contact-title {
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--primary);
+      margin-bottom: 6px;
+    }
+
+    .contact-subtitle {
+      font-size: 13.5px;
+      color: var(--text-muted);
+      margin-bottom: 18px;
+    }
+
+    .contact-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--primary);
+      color: #FFFFFF;
+      text-decoration: none;
+      padding: 12px 26px;
+      border-radius: 30px;
+      font-weight: 700;
+      font-size: 14px;
+      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.2);
+      transition: all 0.2s ease;
+    }
+
+    .contact-btn:hover {
+      background: #1E293B;
+      transform: translateY(-1px);
+      box-shadow: 0 6px 18px rgba(15, 23, 42, 0.3);
+    }
+
+    .footer-copy {
+      text-align: center;
+      font-size: 12.5px;
+      color: var(--text-muted);
+      margin-top: 24px;
+      padding-bottom: 12px;
+    }
+
+    /* RESPONSIVE BREAKPOINTS */
+    @media (max-width: 640px) {
+      body { padding: 14px 10px; }
+      .hero-card { padding: 30px 22px; }
+      .hero-title { font-size: 24px; }
+      .card { padding: 24px 18px; }
+      .card-title { font-size: 18px; }
+      .pillars-grid { grid-template-columns: 1fr; }
+      .permissions-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- HERO HEADER CARD -->
+    <header class="hero-card">
+      <div class="hero-badges">
+        <span class="badge badge-gold">Digital Japa Mala</span>
+        <span class="badge badge-muted">ApptiVerse Labs</span>
+        <span class="badge badge-muted">Updated: November 2026</span>
+      </div>
+      <h1 class="hero-title">Privacy Policy</h1>
+      <p class="hero-desc">
+        Your spiritual chanting practice is sacred and private. We have designed Digital Japa Mala to keep your daily counts strictly on your device without user accounts, server tracking, or personal data collection.
+      </p>
+    </header>
+
+    <!-- KEY PILLARS -->
+    <section class="pillars-grid">
+      <div class="pillar-box">
+        <div class="pillar-icon green">🔒</div>
+        <div class="pillar-text">
+          <h4>100% Local Storage</h4>
+          <p>Mala counts & history stay inside your device storage only.</p>
+        </div>
+      </div>
+      <div class="pillar-box">
+        <div class="pillar-icon blue">🛡️</div>
+        <div class="pillar-text">
+          <h4>No Account Required</h4>
+          <p>Zero logins, no email, phone number, or names collected.</p>
+        </div>
+      </div>
+      <div class="pillar-box">
+        <div class="pillar-icon gold">⚡</div>
+        <div class="pillar-text">
+          <h4>Encrypted in Transit</h4>
+          <p>Ad & billing data use industry standard HTTPS/TLS encryption.</p>
+        </div>
+      </div>
+      <div class="pillar-box">
+        <div class="pillar-icon purple">✨</div>
+        <div class="pillar-text">
+          <h4>Full Data Control</h4>
+          <p>Reset, delete, or export your practice data at any moment.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 1 -->
+    <article class="card">
+      <div class="card-header">
+        <div class="card-number">1</div>
+        <h2 class="card-title">Information Collection & Local Privacy</h2>
+      </div>
+      <div class="card-body">
+        <p><strong>ApptiVerse Labs</strong> built the Digital Japa Mala app as an ad-supported Freemium application. This Service is provided at no cost and is intended for use as is.</p>
+        <ul class="bullet-list">
+          <li><strong>No Personal Information:</strong> We do not collect, transmit, or sell personally identifiable information such as your name, email, phone number, contacts, or home address.</li>
+          <li><strong>Local Data Storage:</strong> All your custom counter profiles, bead settings, target rounds, completed malas, daily streaks, wallpaper preferences, and aggregated history logs are stored strictly on your phone's internal storage (`SharedPreferences` and local app storage).</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- SECTION 2 -->
+    <article class="card">
+      <div class="card-header">
+        <div class="card-number">2</div>
+        <h2 class="card-title">Third-Party SDKs & Data Safety Declaration</h2>
+      </div>
+      <div class="card-body">
+        <p>To support free development through advertisements and allow voluntary ad-free upgrades, the application incorporates verified third-party libraries provided by Google. In accordance with Google Play's Data Safety requirements, these services collect the following telemetry:</p>
+
+        <!-- SUB-CARD: ADMOB -->
+        <div class="sub-card">
+          <div class="sub-card-title">
+            <span>📢 Google AdMob (Google Mobile Ads SDK)</span>
+          </div>
+          <p style="font-size: 13.5px; color: var(--text-muted); margin-bottom: 8px;">
+            Used to deliver banner, interstitial, and exit video ads. Google AdMob automatically collects:
+          </p>
+          <div class="tag-chips">
+            <span class="chip"><span class="chip-dot"></span>Approximate Location (IP Address)</span>
+            <span class="chip"><span class="chip-dot"></span>Device / Advertising ID (AAID)</span>
+            <span class="chip"><span class="chip-dot"></span>App Interactions & Ad Views</span>
+            <span class="chip"><span class="chip-dot"></span>Crash Logs & Diagnostics</span>
+          </div>
+          <p style="font-size: 13px; color: var(--text-muted); margin-top: 8px;">
+            This technical data is used for fraud prevention, ad frequency capping, and contextual/personalized ad delivery. For detailed privacy practices, visit:
+          </p>
+          <ul class="bullet-list" style="margin-top: 4px;">
+            <li><a href="https://policies.google.com/privacy" target="_blank" class="custom-link">Google Privacy Policy ↗</a></li>
+            <li><a href="https://policies.google.com/technologies/partner-sites" target="_blank" class="custom-link">How Google Uses Information From Partner Sites/Apps ↗</a></li>
+          </ul>
+        </div>
+
+        <!-- SUB-CARD: BILLING -->
+        <div class="sub-card">
+          <div class="sub-card-title">
+            <span>💳 Google Play In-App Billing</span>
+          </div>
+          <p style="font-size: 13.5px; color: var(--text-muted);">
+            If you purchase the optional <strong>"Remove Ads"</strong> feature, your payment is processed directly and securely by Google Play Store Billing. ApptiVerse Labs never receives, sees, or stores your banking or credit card details.
+          </p>
+        </div>
+      </div>
+    </article>
+
+    <!-- SECTION 3 -->
+    <article class="card">
+      <div class="card-header">
+        <div class="card-number">3</div>
+        <h2 class="card-title">Device Permissions & Transparent Usage</h2>
+      </div>
+      <div class="card-body">
+        <p>Digital Japa Mala requests only standard system permissions strictly required for its features:</p>
+        
+        <div class="permissions-grid">
+          <div class="perm-tile">
+            <div class="perm-header">
+              <span class="perm-name">🌐 Network State</span>
+              <span class="perm-code">INTERNET</span>
+            </div>
+            <p class="perm-desc">Loads AdMob advertisements and verifies your Google Play in-app purchase status.</p>
+          </div>
+
+          <div class="perm-tile">
+            <div class="perm-header">
+              <span class="perm-name">🔔 Daily Reminders</span>
+              <span class="perm-code">POST_NOTIFICATIONS</span>
+            </div>
+            <p class="perm-desc">Sends opt-in daily practice reminders that can be toggled on/off in Settings anytime.</p>
+          </div>
+
+          <div class="perm-tile">
+            <div class="perm-header">
+              <span class="perm-name">📳 Haptic Touch</span>
+              <span class="perm-code">VIBRATE</span>
+            </div>
+            <p class="perm-desc">Triggers gentle vibration feedback when tapping beads to count without looking at the screen.</p>
+          </div>
+
+          <div class="perm-tile">
+            <div class="perm-header">
+              <span class="perm-name">🖼️ Photo Gallery</span>
+              <span class="perm-code">PHOTO_PICKER</span>
+            </div>
+            <p class="perm-desc">Allows setting a sacred deity wallpaper from your gallery. Photos stay on-device and are never uploaded.</p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- SECTION 4 -->
+    <article class="card">
+      <div class="card-header">
+        <div class="card-number">4</div>
+        <h2 class="card-title">Data Storage, Backup & PDF Export</h2>
+      </div>
+      <div class="card-body">
+        <ul class="bullet-list">
+          <li><strong>Local Backups:</strong> When you generate a backup, your backup text file is saved locally to your device or shared via Android's native share sheet (e.g. to your personal Google Drive). We never have access to your Drive files or storage.</li>
+          <li><strong>PDF Activity Reports:</strong> Downloadable activity reports are compiled entirely on-device and saved directly to your local `Downloads` folder.</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- SECTION 5 -->
+    <article class="card">
+      <div class="card-header">
+        <div class="card-number">5</div>
+        <h2 class="card-title">Security & Encryption in Transit</h2>
+      </div>
+      <div class="card-body">
+        <p>We take safeguarding your information seriously:</p>
+        <ul class="bullet-list">
+          <li>All technical communication between the app and Google services (AdMob and Google Play) is encrypted in transit using industry-standard <strong>HTTPS/TLS protocols</strong>.</li>
+          <li>Because chanting numbers and custom mantra profiles are not uploaded to any remote server, your practice data is isolated from cloud breaches.</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- SECTION 6 -->
+    <article class="card">
+      <div class="card-header">
+        <div class="card-number">6</div>
+        <h2 class="card-title">Data Retention, Deletion & Opt-Out</h2>
+      </div>
+      <div class="card-body">
+        <p>You have complete control over all data related to the application:</p>
+        <ul class="bullet-list">
+          <li><strong>Deleting Practice Data:</strong> You can wipe all counts at any time using the in-app Reset/Delete buttons, by clearing storage in Android Settings (<em>Settings > Apps > Digital Japa Mala > Clear Data</em>), or by uninstalling the application.</li>
+          <li><strong>Advertising ID Opt-Out:</strong> You can reset or permanently delete your device's Android Advertising ID anytime by going to:
+            <div class="highlight-box">
+              <strong>Android Device Settings</strong> ➔ <strong>Google</strong> ➔ <strong>Ads</strong> ➔ Select <strong>"Reset advertising ID"</strong> or <strong>"Delete advertising ID"</strong>.
+            </div>
+          </li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- SECTION 7 & 8 -->
+    <article class="card">
+      <div class="card-header">
+        <div class="card-number">7</div>
+        <h2 class="card-title">Children’s Privacy & Policy Updates</h2>
+      </div>
+      <div class="card-body">
+        <p><strong>Children's Privacy:</strong> Our Service does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13.</p>
+        <p><strong>Policy Changes:</strong> We may update our Privacy Policy periodically. Any updates are effective immediately upon being published on this page.</p>
+      </div>
+    </article>
+
+    <!-- CONTACT CARD -->
+    <footer class="contact-card">
+      <h3 class="contact-title">Have Questions or Suggestions?</h3>
+      <p class="contact-subtitle">If you have any questions about this Privacy Policy or your data, feel free to reach out to us directly.</p>
+      <a href="mailto:support.apptiverse@gmail.com" class="contact-btn">
+        ✉️ Contact ApptiVerse Labs
+      </a>
+      <p style="font-size: 13px; color: var(--text-muted); margin-top: 14px;">
+        support.apptiverse@gmail.com
+      </p>
+    </footer>
+
+    <p class="footer-copy">
+      © 2026 ApptiVerse Labs • Digital Japa Mala • All Rights Reserved
+    </p>
+
+  </div>
+
+</body>
+</html>
