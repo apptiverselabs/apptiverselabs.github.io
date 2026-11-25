@@ -1,64 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - PauseGate | ApptiVerse Labs</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background: linear-gradient(135deg, #0F172A 0%, #1E1B4B 100%);
-            color: #F8FAFC;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - PauseGate: Screen Time & Focus</title>
+  <style>
+    :root {
+      --primary-color: #0f766e;
+      --primary-dark: #115e59;
+      --text-main: #1f2937;
+      --text-muted: #4b5563;
+      --bg-light: #f9fafb;
+      --border-color: #e5e7eb;
+      --card-bg: #ffffff;
+      --highlight-bg: #f0fdfa;
+      --highlight-border: #99f6e4;
+      --badge-bg: #ecfdf5;
+      --badge-text: #065f46;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.7;
+      color: var(--text-main);
+      background-color: transparent;
+      padding: 24px 16px;
+    }
+
+    .container {
+      max-width: 840px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      border-radius: 12px;
+      padding: 32px 28px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.03);
+    }
+
+    .header {
+      border-bottom: 2px solid var(--border-color);
+      padding-bottom: 20px;
+      margin-bottom: 28px;
+    }
+
+    .badge {
+      display: inline-block;
+      background-color: var(--badge-bg);
+      color: var(--badge-text);
+      font-size: 0.82rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 9999px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-size: 1.85rem;
+      font-weight: 800;
+      color: #0f172a;
+      margin-bottom: 8px;
+      letter-spacing: -0.02em;
+    }
+
+    .meta {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+    }
+
+    h2 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #0f172a;
+      margin: 32px 0 14px 0;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--border-color);
+      letter-spacing: -0.01em;
+    }
+
+    h3 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--primary-dark);
+      margin: 20px 0 8px 0;
+    }
+
+    p {
+      margin-bottom: 14px;
+      color: var(--text-main);
+      font-size: 0.96rem;
+    }
+
+    ul {
+      margin: 8px 0 16px 22px;
+      color: var(--text-main);
+      font-size: 0.95rem;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    li strong {
+      color: #111827;
+    }
+
+    .highlight-card {
+      background-color: var(--highlight-bg);
+      border-left: 4px solid var(--primary-color);
+      border-radius: 0 8px 8px 0;
+      padding: 18px 20px;
+      margin: 20px 0;
+    }
+
+    .highlight-card h3 {
+      margin-top: 0;
+      color: var(--primary-dark);
+    }
+
+    .safety-card {
+      background-color: #f8fafc;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin: 16px 0;
+    }
+
+    .safety-card strong {
+      color: #0f172a;
+    }
+
+    a {
+      color: var(--primary-color);
+      text-decoration: underline;
+      font-weight: 500;
+    }
+
+    a:hover {
+      color: var(--primary-dark);
+    }
+
+    .contact-box {
+      background: var(--bg-light);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin-top: 14px;
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        padding: 20px 16px;
+      }
+      h1 {
+        font-size: 1.55rem;
+      }
+      h2 {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
 </head>
-<body class="min-h-screen py-12 px-4 sm:px-6">
-    <div class="max-w-3xl mx-auto bg-slate-900/70 border border-white/10 rounded-3xl p-6 sm:p-10 shadow-2xl backdrop-blur-md">
-        
-        <div class="flex items-center justify-between mb-8 pb-4 border-b border-white/10">
-            <div>
-                <a href="../index.html" class="text-xs text-emerald-400 hover:text-emerald-300 font-semibold mb-2 inline-block">&larr; Back to ApptiVerse Labs</a>
-                <h1 class="text-2xl sm:text-3xl font-extrabold text-white">Privacy Policy for PauseGate</h1>
-                <p class="text-xs text-slate-400 mt-1">Effective Date: August 2026</p>
-            </div>
-            <span class="text-xs font-semibold px-2.5 py-1 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">Version 1.0</span>
-        </div>
+<body>
 
-        <div class="space-y-6 text-sm text-slate-300 leading-relaxed">
-            <div class="bg-emerald-500/10 border-l-4 border-emerald-400 p-4 rounded-r-xl">
-                <strong class="text-white">Our Privacy Guarantee:</strong> PauseGate operates with a strict, on-device, offline architecture. We do NOT collect, transmit, sell, or monetize your personal identity, messages, screen content, or browsing history.
-            </div>
-
-            <h2 class="text-lg font-bold text-white pt-2">1. Zero Personal Data Collection</h2>
-            <p>PauseGate does not require account creation, sign-in, email addresses, or phone numbers. All custom routines, blocked app preferences, and focus statistics are computed and saved exclusively on your local Android device.</p>
-
-            <h2 class="text-lg font-bold text-white pt-2">2. Android Accessibility Service API Usage</h2>
-            <p>PauseGate utilizes Android's <code>AccessibilityService</code> API solely to deliver its core functionality:</p>
-            <ul class="list-disc pl-5 space-y-1.5 text-slate-400">
-                <li><strong>Purpose:</strong> To detect when a user launches an application selected on their distraction blocklist.</li>
-                <li><strong>Action:</strong> Displays a mindful 5-to-30-second breathing friction overlay before the target app opens.</li>
-                <li><strong>Strict Privacy:</strong> PauseGate <strong>never reads screen content</strong> (<code>android:canRetrieveWindowContent</code> is permanently set to <code>false</code>), does not track keystrokes, and transmits zero data off your device.</li>
-            </ul>
-
-            <h2 class="text-lg font-bold text-white pt-2">3. App Usage Statistics (PACKAGE_USAGE_STATS)</h2>
-            <p>With your explicit permission, PauseGate accesses Android's native <code>UsageStatsManager</code> to display daily screen time and open counts on the Analytics screen. This data is computed 100% on-device and is never uploaded anywhere.</p>
-
-            <h2 class="text-lg font-bold text-white pt-2">4. Third-Party Services</h2>
-            <ul class="list-disc pl-5 space-y-1.5 text-slate-400">
-                <li><strong>Google Play Billing:</strong> In-app purchases (Lifetime Pro) are processed securely through Google Play. We do not store or handle payment information.</li>
-                <li><strong>Google AdMob:</strong> Optional rewarded video ads for 24h passes are served by Google AdMob, which may collect pseudonymous device identifiers in accordance with Google's Privacy Policy.</li>
-            </ul>
-
-            <h2 class="text-lg font-bold text-white pt-2">5. Developer Contact</h2>
-            <p>If you have any questions regarding this Privacy Policy, please contact our support team at: <br>
-            <a href="mailto:support.apptiverse@gmail.com" class="text-emerald-400 underline">support.apptiverse@gmail.com</a></p>
-        </div>
-
-        <div class="mt-10 pt-6 border-t border-white/10 text-center text-xs text-slate-500">
-            &copy; 2026 ApptiVerse Labs. All rights reserved.
-        </div>
+  <div class="container">
+    <div class="header">
+      <span class="badge">Official Policy</span>
+      <h1>Privacy Policy for PauseGate: Screen Time & Focus</h1>
+      <p class="meta"><strong>Last Updated:</strong> November 25, 2026 &nbsp;|&nbsp; <strong>Effective Date:</strong> November 25, 2026</p>
     </div>
+
+    <p><strong>ApptiVerse Labs</strong> (&ldquo;we&rdquo;, &ldquo;our&rdquo;, or &ldquo;us&rdquo;) built <strong>PauseGate: Screen Time & Focus</strong> (&ldquo;the App&rdquo;) as a Freemium digital wellbeing and productivity application. This service is provided by ApptiVerse Labs and is designed to help users overcome digital distractions, break unconscious phone habits, and build mindful screen time routines.</p>
+
+    <p>We are deeply committed to user privacy. PauseGate operates on a <strong>100% private, on-device architecture</strong>. We do not collect, store, sell, or transmit your personal data, screen content, or browsing habits to external servers.</p>
+
+    <h2>1. Information Collection and Storage</h2>
+    
+    <h3>A. Local On-Device Data</h3>
+    <p>All user settings, focus schedules, blocked app selections, restricted websites, blocked keywords, mindful breathing records, streaks, and gamification badges are stored <strong>exclusively in your device's internal storage</strong> (using Android Jetpack DataStore / SharedPreferences). This data never leaves your device and is not accessible to ApptiVerse Labs or any third party.</p>
+
+    <h3>B. Personal Data</h3>
+    <p>We <strong>do not</strong> collect personal identification information such as your name, email address, phone number, location, contacts, photos, or files. No user account or registration is required to use PauseGate.</p>
+
+    <h2>2. Android Permissions and Sensitive APIs</h2>
+    <p>To provide mindful distraction blocking and screen time insights, PauseGate requests specific Android permissions. We believe in complete transparency regarding why these permissions are required:</p>
+
+    <div class="highlight-card">
+      <h3>A. AccessibilityService API (Prominent Disclosure)</h3>
+      <p>PauseGate utilizes Android's <code>AccessibilityService</code> API strictly to provide its core digital wellbeing functionality:</p>
+      <ul>
+        <li><strong>Purpose:</strong> To detect when the user launches a distracting application, navigates to a restricted website, or searches a blocked keyword that they have intentionally placed on their blocklist during active focus sessions, scheduled routines, or 24/7 mindful protection. Upon detection, PauseGate presents a calming friction overlay to interrupt impulsive habits.</li>
+        <li><strong>No Sensitive Data Collection:</strong> PauseGate does <strong>NOT</strong> log keystrokes, does <strong>NOT</strong> record screen content, does <strong>NOT</strong> inspect private messages, and does <strong>NOT</strong> capture passwords, payment details, or personal information.</li>
+        <li><strong>No Remote Transmission:</strong> No information observed by the Accessibility Service is ever recorded, stored remotely, or transmitted across the internet.</li>
+      </ul>
+
+      <div class="safety-card">
+        <strong>Strict Financial & Essential App Exemption:</strong>
+        <p style="margin-top: 6px; margin-bottom: 0;">PauseGate includes a hardcoded safety whitelist. The Accessibility Service strictly and unconditionally excludes Indian and international banking applications (SBI, HDFC, ICICI, Axis, Kotak, etc.), UPI payment platforms (Google Pay, PhonePe, Paytm, BHIM, CRED), railway booking platforms (IRCTC Rail Connect), emergency dialers, and system settings. These applications are <strong>never inspected, monitored, or overlaid</strong>.</p>
+      </div>
+    </div>
+
+    <h3>B. Usage Access Permission (<code>PACKAGE_USAGE_STATS</code>)</h3>
+    <ul>
+      <li><strong>Purpose:</strong> Allows PauseGate to read foreground application events and calculate daily screen time, app launch counts, and focus session statistics displayed in your local Insights dashboard. It also serves as a secondary fallback to reliably detect blocked apps when Accessibility is inactive.</li>
+      <li><strong>Privacy:</strong> All usage statistics are processed 100% locally on your phone and are never uploaded to any cloud server.</li>
+    </ul>
+
+    <h3>C. Display Over Other Apps (<code>SYSTEM_ALERT_WINDOW</code> / Full-Screen Overlay)</h3>
+    <ul>
+      <li><strong>Purpose:</strong> Required to display the serene mindful pause screen and breathing countdown directly over blocked apps when distraction is intercepted.</li>
+    </ul>
+
+    <h3>D. Notifications & Alarms (<code>POST_NOTIFICATIONS</code>, <code>SCHEDULE_EXACT_ALARM</code>)</h3>
+    <ul>
+      <li><strong>Purpose:</strong> Used solely to deliver focus countdown notifications, active session status bars, and scheduled routine reminders.</li>
+    </ul>
+
+    <h2>3. Third-Party Services and Advertising</h2>
+    <p>While ApptiVerse Labs does not collect your data directly, PauseGate integrates reputable third-party SDKs that may collect pseudonymous technical data strictly for advertising and payment processing:</p>
+    <ul>
+      <li><strong>Google Play Services:</strong> Used for core Android runtime stability and APIs.</li>
+      <li><strong>Google AdMob (Google LLC):</strong> We use Google AdMob to display banner, interstitial, and rewarded video ads (such as unlocking emergency mindful passes). AdMob may collect and process device identifiers (including Google Advertising ID), IP addresses, and diagnostic crash data to serve relevant advertisements in compliance with Google's Privacy Policy.
+        <br><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">Google AdMob Privacy Policy &rarr;</a>
+      </li>
+      <li><strong>Google Play In-App Billing:</strong> Premium features and Pro upgrades are handled entirely through Google Play's secure in-app billing infrastructure. ApptiVerse Labs never receives, stores, or processes your credit card, debit card, or bank account information.
+        <br><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Play Privacy Policy &rarr;</a>
+      </li>
+    </ul>
+
+    <h2>4. Data Retention and Deletion</h2>
+    <p>Because all your schedules, blocked lists, focus statistics, and badges are stored locally on your device:</p>
+    <ul>
+      <li>You have complete control over your data at all times.</li>
+      <li>You can permanently delete all data generated by PauseGate at any moment by clearing the app's cache and data in your device's <strong>Android Settings &gt; Apps &gt; PauseGate &gt; Storage &gt; Clear Data</strong>, or simply by uninstalling the application.</li>
+    </ul>
+
+    <h2>5. Security</h2>
+    <p>We value your trust in choosing PauseGate to regain control over your screen time. Because our architecture is strictly offline and does not transmit your personal or usage data to external servers, your activity remains completely private to you on your personal device.</p>
+
+    <h2>6. Children&rsquo;s Privacy</h2>
+    <p>PauseGate is not directed toward children under the age of 13. We do not knowingly collect or solicit personal information from children under 13 years of age. If you believe that a child has provided personal information to third-party services through our App, please contact us so we can take appropriate steps.</p>
+
+    <h2>7. Changes to This Privacy Policy</h2>
+    <p>We may update our Privacy Policy periodically to reflect app enhancements or regulatory requirements. Any updates will be posted directly on this page with an updated &ldquo;Last Updated&rdquo; date. You are advised to review this page periodically for any changes.</p>
+
+    <h2>8. Contact Us</h2>
+    <p>If you have any questions, suggestions, or concerns regarding this Privacy Policy or PauseGate's privacy practices, please contact us at:</p>
+
+    <div class="contact-box">
+      <p><strong>Developer Entity:</strong> ApptiVerse Labs</p>
+      <p style="margin-bottom: 0;"><strong>Email:</strong> <a href="mailto:support.apptiverse@gmail.com">support.apptiverse@gmail.com</a></p>
+    </div>
+  </div>
+
 </body>
 </html>
